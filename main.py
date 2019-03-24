@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 """Configure MY SQL INCOMPLETE
 
-
 """
 
 
