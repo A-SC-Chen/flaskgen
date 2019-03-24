@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-    <style>
+<style>
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -12,30 +12,41 @@
       .container > div {
       flex: 1; /*grow*/
       }
-    </style>
-    <div class ="jumbotron text-center">
-        <h1>Student Overview</h1>
-        <p class="lead">There are currently no new updates</p>
-        {% for chathead in chatheads %}
-        <div class="container">
+
+
+
+
+</style>
+<div class="jumbotron text-center">
+    <h1>Student Overview</h1>
+    <p class="lead">There are currently no new updates</p>
+    {% for chathead in chatheads %}
+    <div class="container">
         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="200%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="{{chathead.student}}"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">{{chathead.student}}</text></svg>
-            <div class="card-body">
-              <p class="card-text">{{chathead.description}}.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="chat/{{chathead.name}}">Contact</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="profile/{{chathead.student}}">View</button>
+            <div class="card mb-4 shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="200%" height="225"
+                     xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                     role="img" aria-label="{{chathead.student}}"><title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c"/>
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">{{chathead.student}}</text>
+                </svg>
+                <div class="card-body">
+                    <p class="card-text">{{chathead.description}}.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                                    href="chat/{{chathead.name}}">Contact</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                                    href="student/{{chathead.student}}">View</button>
+                        </div>
+                        <small class="text-muted">Updated {{chathead.last_update}} hours ago</small>
+                    </div>
                 </div>
-                <small class="text-muted">Updated {{chathead.last_update}} hours ago</small>
-              </div>
             </div>
-          </div>
         </div>
         <img src="static/{{chathead.student}}.png" width="450" height="300"/>
-        </div>
-        {% endfor %}
     </div>
+    {% endfor %}
+</div>
 
 {% endblock %}

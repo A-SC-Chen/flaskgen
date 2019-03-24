@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<h2>{{student.student}} Recent Data</h2>
+<form action="" method="POST">
+    <input type="text" class="Date" placeholder="Date"/>
+    <input type="text" class="Data Category" placeholder="Category"/>
+    <input type="submit"/>
+</form>
+<div class="jumbotron text-center">
+    <h1>Student Overview</h1>
+    <br>
+    <p>{{student.description}}</p>
+    <img src="../static/{{student.student}}.png" width="450" height="300"/>
+    <img src="../static/{{student.student}}_scatter.png" width="450" height="300"/>
+    <br>
+    <br>
+    <p>Last updated {{student.last_update}} hour ago</p>
+</div>
+{% endblock %}
