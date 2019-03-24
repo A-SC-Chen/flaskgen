@@ -2,8 +2,6 @@ import random
 import matplotlib
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
-import mpld3
-from mpld3 import plugins, utils
 
 import numpy as np
 
@@ -15,6 +13,7 @@ def generate_graph(name):
     plt.xlabel('Days')
     plt.ylabel('Time Spent online')
     plt.savefig('templates/'+ name + '.png')
+    plt.clf()
 
 
 def chatheads():
