@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da116cc3-fddc-4139-85ad-600ac2dea57d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sources.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatheads.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatheads.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/Adrian.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/Adrian.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Adrian_scatter.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/Adrian_scatter.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/Barry.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/Barry.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Barry_scatter.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/Barry_scatter.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/Carl.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/Carl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/articles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/confirmed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/confirmed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/_formhelpers.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/_formhelpers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/_messages.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/_messages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/_navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/_navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Carl_scatter.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/Carl_scatter.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="285">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -197,9 +183,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="110" />
+    <option name="x" value="5" />
     <option name="y" value="23" />
-    <option name="width" value="1288" />
+    <option name="width" value="1393" />
     <option name="height" value="829" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -389,7 +375,21 @@
       <option name="project" value="LOCAL" />
       <updated>1553450162836</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="new python src libraries">
+      <created>1553456346230</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1553456346231</updated>
+    </task>
+    <task id="LOCAL-00011" summary="new matlibplot files">
+      <created>1553456374935</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1553456374935</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -402,15 +402,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="110" y="23" width="1288" height="829" extended-state="0" />
-    <editor active="true" />
+    <frame x="5" y="23" width="1393" height="829" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16969219" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15670554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32971507" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3310719" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3310719" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -429,7 +428,8 @@
     <MESSAGE value="png revision" />
     <MESSAGE value="chatroom update and png directory change" />
     <MESSAGE value="new python src libraries" />
-    <option name="LAST_COMMIT_MESSAGE" value="new python src libraries" />
+    <MESSAGE value="new matlibplot files" />
+    <option name="LAST_COMMIT_MESSAGE" value="new matlibplot files" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/data.py">
@@ -629,8 +629,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
