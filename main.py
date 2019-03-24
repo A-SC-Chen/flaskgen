@@ -35,6 +35,7 @@ class RegisterForm(Form):
     name = StringField('Name', [validators.length(min=1, max=20)])
     username = StringField('Username', [validators.length(min=4, max=25)])
     email = StringField('Email', [validators.length(min=6, max=50)])
+    # password requires PasswordField instead
     password = PasswordField('Password', [
         validators.DataRequired(),
         validators.EqualTo('confirm', message='Passwords do not match')
