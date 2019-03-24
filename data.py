@@ -2,17 +2,17 @@ def Articles():
     articles = [
         {
             'id': 1,
-            'title': "INSERT INFORMATION HERE",
+            'title': "Article 1",
             #additional params can be added
         },
         {
             'id': 2,
-            'title': "INSERT INFORMATION HERE",
+            'title': "Article 2",
             # additional params can be added
         },
         {
             'id': 3,
-            'title': "INSERT INFORMATION HERE",
+            'title': "Article 3",
             # additional params can be added
         }
     ]

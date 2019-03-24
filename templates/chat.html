@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <br>
+    <br>
+    <br>
+    <h2>{{name}}, parent of [PLACEHOLDER]</h2>
+    <form action="" method="POST">
+      <input type="text" class="SEARCH" placeholder="Date"/>
+      <input type="text" class="message" placeholder="Message"/>
+      <input type="submit"/>
+    </form>
+
+    <iframe src="http://deadsimplechat.com/{{name}}3{{name}}9{{name}}" frameborder="0" width="800px" height="600px"></iframe>
+
+    <p><cite>Chat Room API</cite> by Mohammed Lakkadshaw. 2012.</p>
+{% endblock %}

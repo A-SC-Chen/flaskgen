@@ -1,25 +1,41 @@
-from flask import Flask, render_template, flash, url_for, session, logging, request
+from flask import Flask, render_template, flash, redirect, url_for, session, logging, request
 from data import Articles
+from chatheads import chatheads
+from flask_socketio import SocketIO
 # from flask_mysqldb import MySQL
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from passlib.hash import sha256_crypt
 
 app = Flask(__name__)
-
-"""Configure MY SQL INCOMPLETE
+app.secret_key= 'fds312312is not important'
 
 """
+# Configure MySQL
 
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'lorem'
+app.config['MYSQL_PASSWORD'] = 'lorem'
+app.config['MYSQL_DB'] = 'lorem'
+app.config['MYSQL_CURSORCLASS'] = 'DistCursor'
 
+# initiate MySQL
+
+mysql = MySQL(app)
+"""
 Articles = Articles()
+chatheads = chatheads()
 
 @app.route('/')
 def home():
     return render_template('home.html')
 
+@app.route('/inbox')
+def inbox():
+    return render_template('inbox.html', chatheads = chatheads)
+
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('about.html', chatheads = chatheads)
 
 @app.route('/shortcuts')
 def articles():
@@ -29,6 +45,14 @@ def articles():
 @app.route('/article/<string:id>')
 def article(id):
     return render_template('article.html', id=id)
+
+@app.route('/confirmed')
+def confirmed():
+    return render_template('confirmed.html')
+
+@app.route('/chat/<string:name>')
+def chat(name):
+    return render_template('chat.html', name=name)
 
 class RegisterForm(Form):
     name = StringField('Name', [validators.length(min=1, max=20)])
@@ -45,11 +69,25 @@ class RegisterForm(Form):
 def register():
     form = RegisterForm(request.form)
     if request.method == 'POST' and form.validate():
-        return render_template('register.html', form=form)
-    return render_template('register.html', form=form)
+        name = form.name.data
+        email = form.email.data
+        username = form.username.data
+        password = sha256_crypt.encrypt(str(form.password.data))
 
-def article(id):
-    return render_template('article.html', id=id)
+        """ #create cursor
+        # cur = mysql.connection.cursor()
+        
+        cur.execute("INSERT INTO users(name, email, username, password) VALUES(%s, 
+        %s, %s, %s)"), (name, email, username, password)
+        
+        mysql.connect.commit()
+        
+        cur.close()
+        
+        """
+        return redirect(url_for('home') + 'confirmed')
+
+    return render_template('register.html', form=form)
 
 if __name__ == '__main__':
     app.run(debug=True)
