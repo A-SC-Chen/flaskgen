@@ -6,11 +6,18 @@
         font-size: 1.125rem;
         text-anchor: middle;
       }
+      .container {
+      display: flex;
+      }
+      .container > div {
+      flex: 1; /*grow*/
+      }
     </style>
     <div class ="jumbotron text-center">
         <h1>Student Overview</h1>
         <p class="lead">There are currently no new updates</p>
         {% for chathead in chatheads %}
+        <div class="container">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="200%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="{{chathead.student}}"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">{{chathead.student}}</text></svg>
@@ -26,7 +33,8 @@
             </div>
           </div>
         </div>
-        <img class="png" src="/{{chathead.student}}.png", alt = "{{chathead.student}}"/>
+        <img src="static/{{chathead.student}}.png" width="450" height="300"/>
+        </div>
         {% endfor %}
     </div>
 

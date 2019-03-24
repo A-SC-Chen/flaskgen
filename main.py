@@ -1,5 +1,4 @@
 from flask import Flask, render_template, flash, redirect, url_for, session, logging, request
-from data import Articles
 from chatheads import chatheads
 from flask_socketio import SocketIO
 # from flask_mysqldb import MySQL
@@ -22,12 +21,15 @@ app.config['MYSQL_CURSORCLASS'] = 'DistCursor'
 
 mysql = MySQL(app)
 """
-Articles = Articles()
 chatheads = chatheads()
 
 @app.route('/')
 def home():
     return render_template('home.html')
+
+@app.route('/trial')
+def trial():
+    return render_template('trial.html')
 
 @app.route('/inbox')
 def inbox():
@@ -39,12 +41,7 @@ def about():
 
 @app.route('/shortcuts')
 def articles():
-    return render_template('articles.html', articles = Articles)
-
-
-@app.route('/article/<string:id>')
-def article(id):
-    return render_template('article.html', id=id)
+    return render_template('articles.html')
 
 @app.route('/confirmed')
 def confirmed():

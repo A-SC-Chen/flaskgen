@@ -1,8 +1,8 @@
 import random
+import os
 import matplotlib
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
-
 import numpy as np
 
 def generate_graph(name):
@@ -12,7 +12,10 @@ def generate_graph(name):
     plt.plot(xx, yy)
     plt.xlabel('Days')
     plt.ylabel('Time Spent online')
-    plt.savefig('templates/'+ name + '.png')
+    strFile = './static/' + name + '.png'
+    if os.path.isfile(strFile):
+        os.remove(strFile)
+    plt.savefig(strFile)
     plt.clf()
 
 
@@ -36,10 +39,10 @@ def chatheads():
         },
         {
             'name': 'Carol',
-            'student': "Corrin",
-            'description': 'Corrin is the child of Carol',
+            'student': "Carl",
+            'description': 'Carl is the child of Carol',
             'last_update': random.randint(1, 40),
-            'recent_graph': generate_graph('Corrin')
+            'recent_graph': generate_graph('Carl')
         }
     ]
     return chatheads

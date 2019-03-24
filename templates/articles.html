@@ -1,10 +1,9 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-    <h1>Articles</h1>
-    <ul class="list-group">
-    {% for article in articles %}
-        <li class="'list-group-item"><a href="article/{{article.id}}/">{{article.title}}</a></li>
-    {% endfor %}
-    </ul>
+    <br>
+    <br>
+    <iframe src="https://www.hackmentalhealth.care/faq" frameborder="0" width="800px" height="800px"></iframe>
+    <a class="twitter-timeline" data-lang="en" data-width="220" data-height="800" data-dnt="true" data-theme="light" data-link-color="#F5F8FA" href="https://twitter.com/PsychToday?ref_src=twsrc%5Etfw">Trending Now</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 {% endblock %}
